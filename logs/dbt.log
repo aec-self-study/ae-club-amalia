@@ -774,3 +774,243 @@ where id = 1;
 [0m20:09:01.698954 [debug] [MainThread]: Command `dbt run` failed at 20:09:01.698850 after 6.19 seconds
 [0m20:09:01.699389 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70a852738fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70a851a5c5b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70a83dc0e740>]}
 [0m20:09:01.699824 [debug] [MainThread]: Flushing usage events
+[0m20:10:39.096559 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x722a42659000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x722a40d91b40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x722a40d91ba0>]}
+
+
+============================== 20:10:39.101120 | 50a03c3e-77b9-4299-87f1-4033c602c79e ==============================
+[0m20:10:39.101120 [info ] [MainThread]: Running with dbt=1.8.2
+[0m20:10:39.101769 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': '/workspaces/ae-club-amalia/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:10:39.793833 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '50a03c3e-77b9-4299-87f1-4033c602c79e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x722a4100e020>]}
+[0m20:10:39.912220 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '50a03c3e-77b9-4299-87f1-4033c602c79e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x722a2e1e9ae0>]}
+[0m20:10:39.913049 [info ] [MainThread]: Registered adapter: bigquery=1.8.1
+[0m20:10:39.926506 [debug] [MainThread]: checksum: f0a141b9de567cb7f131613ba2682f40b3a1c6a157f81c6e5435862eff68f109, vars: {}, profile: , target: , version: 1.8.2
+[0m20:10:40.061521 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m20:10:40.062193 [debug] [MainThread]: Partial parsing: updated file: coffee_shop_amc://models/monthly_customers.sql
+[0m20:10:40.314397 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '50a03c3e-77b9-4299-87f1-4033c602c79e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x722a2d6e5ae0>]}
+[0m20:10:40.416991 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '50a03c3e-77b9-4299-87f1-4033c602c79e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x722a2d91a5c0>]}
+[0m20:10:40.417742 [info ] [MainThread]: Found 5 models, 4 data tests, 469 macros
+[0m20:10:40.418216 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '50a03c3e-77b9-4299-87f1-4033c602c79e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x722a2d919060>]}
+[0m20:10:40.419964 [info ] [MainThread]: 
+[0m20:10:40.420650 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m20:10:40.425477 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_aec-students'
+[0m20:10:40.425964 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:10:41.390772 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_aec-students, now list_aec-students_dbt_amc)
+[0m20:10:41.391379 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:10:41.590206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '50a03c3e-77b9-4299-87f1-4033c602c79e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x722a2e081f90>]}
+[0m20:10:41.590840 [info ] [MainThread]: Concurrency: 8 threads (target='dev')
+[0m20:10:41.591289 [info ] [MainThread]: 
+[0m20:10:41.595388 [debug] [Thread-1 (]: Began running node model.coffee_shop_amc.customers
+[0m20:10:41.596217 [info ] [Thread-1 (]: 1 of 5 START sql view model dbt_amc.customers .................................. [RUN]
+[0m20:10:41.596936 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_aec-students_dbt_amc, now model.coffee_shop_amc.customers)
+[0m20:10:41.597547 [debug] [Thread-1 (]: Began compiling node model.coffee_shop_amc.customers
+[0m20:10:41.607744 [debug] [Thread-2 (]: Began running node model.coffee_shop_amc.draft_customers
+[0m20:10:41.608257 [debug] [Thread-3 (]: Began running node model.coffee_shop_amc.monthly_customers
+[0m20:10:41.609595 [debug] [Thread-1 (]: Writing injected SQL for node "model.coffee_shop_amc.customers"
+[0m20:10:41.610044 [debug] [Thread-4 (]: Began running node model.coffee_shop_amc.my_first_dbt_model
+[0m20:10:41.610541 [info ] [Thread-2 (]: 2 of 5 START sql table model dbt_amc.draft_customers ........................... [RUN]
+[0m20:10:41.611206 [info ] [Thread-3 (]: 3 of 5 START sql view model dbt_amc.monthly_customers .......................... [RUN]
+[0m20:10:41.612070 [info ] [Thread-4 (]: 4 of 5 START sql table model dbt_amc.my_first_dbt_model ........................ [RUN]
+[0m20:10:41.613037 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.coffee_shop_amc.draft_customers'
+[0m20:10:41.613439 [debug] [Thread-1 (]: Began executing node model.coffee_shop_amc.customers
+[0m20:10:41.613994 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.coffee_shop_amc.monthly_customers'
+[0m20:10:41.614552 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.coffee_shop_amc.my_first_dbt_model'
+[0m20:10:41.615021 [debug] [Thread-2 (]: Began compiling node model.coffee_shop_amc.draft_customers
+[0m20:10:41.636379 [debug] [Thread-3 (]: Began compiling node model.coffee_shop_amc.monthly_customers
+[0m20:10:41.645362 [debug] [Thread-1 (]: Writing runtime sql for node "model.coffee_shop_amc.customers"
+[0m20:10:41.645869 [debug] [Thread-4 (]: Began compiling node model.coffee_shop_amc.my_first_dbt_model
+[0m20:10:41.650120 [debug] [Thread-2 (]: Writing injected SQL for node "model.coffee_shop_amc.draft_customers"
+[0m20:10:41.651986 [debug] [Thread-3 (]: Writing injected SQL for node "model.coffee_shop_amc.monthly_customers"
+[0m20:10:41.654644 [debug] [Thread-4 (]: Writing injected SQL for node "model.coffee_shop_amc.my_first_dbt_model"
+[0m20:10:41.655270 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:10:41.656024 [debug] [Thread-3 (]: Began executing node model.coffee_shop_amc.monthly_customers
+[0m20:10:41.656784 [debug] [Thread-4 (]: Began executing node model.coffee_shop_amc.my_first_dbt_model
+[0m20:10:41.657331 [debug] [Thread-2 (]: Began executing node model.coffee_shop_amc.draft_customers
+[0m20:10:41.657827 [debug] [Thread-1 (]: On model.coffee_shop_amc.customers: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "coffee_shop_amc", "target_name": "dev", "node_id": "model.coffee_shop_amc.customers"} */
+
+
+  create or replace view `aec-students`.`dbt_amc`.`customers`
+  OPTIONS()
+  as with customer_orders as (
+  select
+     customer_id
+     , count(*) as n_orders
+     , min(created_at) as first_order_at
+  from `analytics-engineers-club.coffee_shop.orders` 
+  group by 1
+)
+
+select 
+  customers.id as customer_id
+  , customers.name
+  , customers.email
+  , coalesce(customer_orders.n_orders, 0) as n_orders
+  , customer_orders.first_order_at
+from `analytics-engineers-club.coffee_shop.customers` as customers
+left join  customer_orders
+  on  customers.id = customer_orders.customer_id 
+
+limit 5;
+
+
+[0m20:10:41.660575 [debug] [Thread-3 (]: Writing runtime sql for node "model.coffee_shop_amc.monthly_customers"
+[0m20:10:41.677028 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m20:10:41.681975 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m20:10:41.683975 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m20:10:41.686888 [debug] [Thread-3 (]: On model.coffee_shop_amc.monthly_customers: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "coffee_shop_amc", "target_name": "dev", "node_id": "model.coffee_shop_amc.monthly_customers"} */
+
+
+  create or replace view `aec-students`.`dbt_amc`.`monthly_customers`
+  OPTIONS()
+  as select 
+  date_trunc(created_at, month) as month,
+  count(distinct customer_id)
+from analytics-engineers-club.coffee_shop.orders 
+group by 1
+
+limit 10;
+
+
+[0m20:10:41.903303 [debug] [Thread-2 (]: Writing runtime sql for node "model.coffee_shop_amc.draft_customers"
+[0m20:10:41.904953 [debug] [Thread-4 (]: Writing runtime sql for node "model.coffee_shop_amc.my_first_dbt_model"
+[0m20:10:41.905741 [debug] [Thread-2 (]: On model.coffee_shop_amc.draft_customers: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "coffee_shop_amc", "target_name": "dev", "node_id": "model.coffee_shop_amc.draft_customers"} */
+
+  
+    
+
+    create or replace table `aec-students`.`dbt_amc`.`draft_customers`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+with customer_orders as (
+    select 
+        customer_id,
+        count(id) as num_orders,
+        min(created_at) as first_order_at
+    from analytics-engineers-club.coffee_shop.orders
+    group by 1
+)
+
+select 
+    customers.id as customer_id, 
+    customers.name as customer_name, 
+    customers.email as customer_email, 
+    customer_orders.first_order_at, 
+    customer_orders.num_orders
+from analytics-engineers-club.coffee_shop.customers
+left join customer_orders on customers.id = customer_orders.customer_id
+order by first_order_at
+limit 5
+    );
+  
+[0m20:10:41.906209 [debug] [Thread-4 (]: On model.coffee_shop_amc.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "coffee_shop_amc", "target_name": "dev", "node_id": "model.coffee_shop_amc.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `aec-students`.`dbt_amc`.`my_first_dbt_model`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m20:10:42.069576 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:d40ca8cc-afb5-4768-b1e2-fcb687b1a7e3&page=queryresults
+[0m20:10:42.101256 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:464474a0-0231-4dd1-bec9-b4c794ff749f&page=queryresults
+[0m20:10:42.228159 [debug] [Thread-3 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('CREATE VIEW columns must be named, but column 2 has no name at [6:6]; reason: invalidQuery, location: query, message: CREATE VIEW columns must be named, but column 2 has no name at [6:6]')
+[0m20:10:42.229987 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:87fac49f-c00c-4085-ac7f-6a4c517260a8&page=queryresults
+[0m20:10:42.282331 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:71df8774-dd63-4d63-96eb-451a2355be9b&page=queryresults
+[0m20:10:42.599284 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '50a03c3e-77b9-4299-87f1-4033c602c79e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x722a2e1eabf0>]}
+[0m20:10:42.600105 [info ] [Thread-1 (]: 1 of 5 OK created sql view model dbt_amc.customers ............................. [[32mCREATE VIEW (0 processed)[0m in 1.00s]
+[0m20:10:42.600865 [debug] [Thread-1 (]: Finished running node model.coffee_shop_amc.customers
+[0m20:10:43.210051 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:1797241e-a635-4a5e-a1a9-f674312cb255&page=queryresults
+[0m20:10:43.359757 [error] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:1797241e-a635-4a5e-a1a9-f674312cb255&page=queryresults
+[0m20:10:43.362900 [debug] [Thread-3 (]: Database Error in model monthly_customers (models/monthly_customers.sql)
+  CREATE VIEW columns must be named, but column 2 has no name at [6:6]
+  compiled Code at target/run/coffee_shop_amc/models/monthly_customers.sql
+[0m20:10:43.363425 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '50a03c3e-77b9-4299-87f1-4033c602c79e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x722a2c0c4580>]}
+[0m20:10:43.364161 [error] [Thread-3 (]: 3 of 5 ERROR creating sql view model dbt_amc.monthly_customers ................. [[31mERROR[0m in 1.75s]
+[0m20:10:43.364965 [debug] [Thread-3 (]: Finished running node model.coffee_shop_amc.monthly_customers
+[0m20:10:44.145749 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '50a03c3e-77b9-4299-87f1-4033c602c79e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x722a2d71a590>]}
+[0m20:10:44.146589 [info ] [Thread-4 (]: 4 of 5 OK created sql table model dbt_amc.my_first_dbt_model ................... [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 2.53s]
+[0m20:10:44.147359 [debug] [Thread-4 (]: Finished running node model.coffee_shop_amc.my_first_dbt_model
+[0m20:10:44.148106 [debug] [Thread-6 (]: Began running node model.coffee_shop_amc.my_second_dbt_model
+[0m20:10:44.148671 [info ] [Thread-6 (]: 5 of 5 START sql view model dbt_amc.my_second_dbt_model ........................ [RUN]
+[0m20:10:44.149314 [debug] [Thread-6 (]: Acquiring new bigquery connection 'model.coffee_shop_amc.my_second_dbt_model'
+[0m20:10:44.149764 [debug] [Thread-6 (]: Began compiling node model.coffee_shop_amc.my_second_dbt_model
+[0m20:10:44.152867 [debug] [Thread-6 (]: Writing injected SQL for node "model.coffee_shop_amc.my_second_dbt_model"
+[0m20:10:44.153597 [debug] [Thread-6 (]: Began executing node model.coffee_shop_amc.my_second_dbt_model
+[0m20:10:44.156729 [debug] [Thread-6 (]: Writing runtime sql for node "model.coffee_shop_amc.my_second_dbt_model"
+[0m20:10:44.157410 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m20:10:44.157931 [debug] [Thread-6 (]: On model.coffee_shop_amc.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "coffee_shop_amc", "target_name": "dev", "node_id": "model.coffee_shop_amc.my_second_dbt_model"} */
+
+
+  create or replace view `aec-students`.`dbt_amc`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `aec-students`.`dbt_amc`.`my_first_dbt_model`
+where id = 1;
+
+
+[0m20:10:44.506794 [debug] [Thread-6 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:5dc884c0-26aa-4238-a655-2d9e0457c9ef&page=queryresults
+[0m20:10:44.933336 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '50a03c3e-77b9-4299-87f1-4033c602c79e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x722a40f0b700>]}
+[0m20:10:44.934122 [info ] [Thread-6 (]: 5 of 5 OK created sql view model dbt_amc.my_second_dbt_model ................... [[32mCREATE VIEW (0 processed)[0m in 0.78s]
+[0m20:10:44.934860 [debug] [Thread-6 (]: Finished running node model.coffee_shop_amc.my_second_dbt_model
+[0m20:10:45.360599 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '50a03c3e-77b9-4299-87f1-4033c602c79e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x722a2c0dc2e0>]}
+[0m20:10:45.361309 [info ] [Thread-2 (]: 2 of 5 OK created sql table model dbt_amc.draft_customers ...................... [[32mCREATE TABLE (5.0 rows, 28.2 MiB processed)[0m in 3.75s]
+[0m20:10:45.362020 [debug] [Thread-2 (]: Finished running node model.coffee_shop_amc.draft_customers
+[0m20:10:45.363664 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:10:45.364035 [debug] [MainThread]: Connection 'model.coffee_shop_amc.customers' was properly closed.
+[0m20:10:45.364438 [debug] [MainThread]: Connection 'model.coffee_shop_amc.draft_customers' was properly closed.
+[0m20:10:45.364791 [debug] [MainThread]: Connection 'model.coffee_shop_amc.monthly_customers' was properly closed.
+[0m20:10:45.365133 [debug] [MainThread]: Connection 'model.coffee_shop_amc.my_first_dbt_model' was properly closed.
+[0m20:10:45.365477 [debug] [MainThread]: Connection 'model.coffee_shop_amc.my_second_dbt_model' was properly closed.
+[0m20:10:45.365935 [info ] [MainThread]: 
+[0m20:10:45.366449 [info ] [MainThread]: Finished running 3 view models, 2 table models in 0 hours 0 minutes and 4.95 seconds (4.95s).
+[0m20:10:45.368249 [debug] [MainThread]: Command end result
+[0m20:10:45.400053 [info ] [MainThread]: 
+[0m20:10:45.400619 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m20:10:45.401061 [info ] [MainThread]: 
+[0m20:10:45.401607 [error] [MainThread]:   Database Error in model monthly_customers (models/monthly_customers.sql)
+  CREATE VIEW columns must be named, but column 2 has no name at [6:6]
+  compiled Code at target/run/coffee_shop_amc/models/monthly_customers.sql
+[0m20:10:45.402050 [info ] [MainThread]: 
+[0m20:10:45.402528 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=1 SKIP=0 TOTAL=5
+[0m20:10:45.403444 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 6.3544183, "process_user_time": 2.566675, "process_kernel_time": 0.273145, "process_mem_max_rss": "218812", "process_out_blocks": "3000", "command_success": false, "process_in_blocks": "0"}
+[0m20:10:45.404099 [debug] [MainThread]: Command `dbt run` failed at 20:10:45.403969 after 6.36 seconds
+[0m20:10:45.404555 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x722a42659000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x722a2e1e9ae0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x722a2db18eb0>]}
+[0m20:10:45.404991 [debug] [MainThread]: Flushing usage events
