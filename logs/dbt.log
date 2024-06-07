@@ -1,0 +1,76 @@
+[0m19:35:56.655911 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b199e33d090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b199ca29b40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b199ca29ba0>]}
+
+
+============================== 19:35:56.659687 | b11a3f19-bda2-4a5f-94ba-a3435fd889ef ==============================
+[0m19:35:56.659687 [info ] [MainThread]: Running with dbt=1.8.2
+[0m19:35:56.660335 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt init', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m19:35:56.667329 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/home/vscode/.dbt')}
+[0m19:35:56.667823 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m19:36:03.295890 [debug] [MainThread]: Starter project path: /home/vscode/.local/lib/python3.10/site-packages/dbt/include/starter_project
+[0m19:36:03.301027 [info ] [MainThread]: 
+Your new dbt project "coffee_shop_amc" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m19:36:03.301658 [info ] [MainThread]: Setting up your profile.
+[0m19:37:02.423515 [info ] [MainThread]: Profile coffee_shop_amc written to /home/vscode/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m19:37:02.430360 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 65.82433, "process_user_time": 1.572423, "process_kernel_time": 0.355192, "process_mem_max_rss": "197880", "process_in_blocks": "48", "process_out_blocks": "80"}
+[0m19:37:02.431017 [debug] [MainThread]: Command `dbt init` succeeded at 19:37:02.430909 after 65.83 seconds
+[0m19:37:02.431460 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b199e33d090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b199ca2a500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b199ca29ae0>]}
+[0m19:37:02.431906 [debug] [MainThread]: Flushing usage events
+[0m19:39:30.136229 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x775eac814fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x775eaaf4db10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x775eaaf4dba0>]}
+
+
+============================== 19:39:30.140657 | 452af030-a1d8-447f-a6fe-efdc171c8a75 ==============================
+[0m19:39:30.140657 [info ] [MainThread]: Running with dbt=1.8.2
+[0m19:39:30.141315 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m19:39:30.141853 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /workspaces/ae-club-amalia/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m19:39:30.142698 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.053593677, "process_user_time": 1.04394, "process_kernel_time": 0.131992, "process_mem_max_rss": "86004", "process_out_blocks": "24", "command_success": false, "process_in_blocks": "0"}
+[0m19:39:30.143270 [debug] [MainThread]: Command `dbt run` failed at 19:39:30.143170 after 0.05 seconds
+[0m19:39:30.143665 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x775eac814fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x775eaaf4db70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x775eaaf4dab0>]}
+[0m19:39:30.144098 [debug] [MainThread]: Flushing usage events
+[0m19:40:35.618603 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72763ebc8fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72763d2a9b40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72763d2a9ba0>]}
+
+
+============================== 19:40:35.623371 | fcb1b789-d9a3-4173-90fa-516904d25c4f ==============================
+[0m19:40:35.623371 [info ] [MainThread]: Running with dbt=1.8.2
+[0m19:40:35.624043 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:40:35.624606 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /workspaces/ae-club-amalia/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m19:40:35.625509 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.06740405, "process_user_time": 1.120769, "process_kernel_time": 0.127179, "process_mem_max_rss": "86268", "process_out_blocks": "8", "command_success": false, "process_in_blocks": "0"}
+[0m19:40:35.626106 [debug] [MainThread]: Command `dbt run` failed at 19:40:35.626002 after 0.07 seconds
+[0m19:40:35.626523 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72763ebc8fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72763d2a9ab0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72763d2a9b70>]}
+[0m19:40:35.626939 [debug] [MainThread]: Flushing usage events
+[0m19:41:33.426064 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x714ded17d000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x714deb8b2470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x714deb8b24d0>]}
+
+
+============================== 19:41:33.429947 | 03ce0c71-77df-4de2-b3f0-43ddce139c79 ==============================
+[0m19:41:33.429947 [info ] [MainThread]: Running with dbt=1.8.2
+[0m19:41:33.430603 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': '/home/vscode/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt deps', 'send_anonymous_usage_stats': 'True'}
+[0m19:41:33.431252 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /workspaces/ae-club-amalia/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m19:41:33.432135 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_wall_clock_time": 0.05365561, "process_user_time": 1.084856, "process_kernel_time": 0.088069, "process_mem_max_rss": "86352", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m19:41:33.432722 [debug] [MainThread]: Command `dbt deps` failed at 19:41:33.432619 after 0.05 seconds
+[0m19:41:33.433172 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x714ded17d000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x714deb8b21a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x714deb8b1240>]}
+[0m19:41:33.433726 [debug] [MainThread]: Flushing usage events
